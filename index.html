@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Repositório Decolonial — Ensino de Química</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YC27CZVKDC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YC27CZVKDC');
+</script>
+
+
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="p-zig" width="24" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 13 L6 5 L12 13 L18 5 L24 13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="miter"/>
+    </pattern>
+    <pattern id="p-losango" width="22" height="18" patternUnits="userSpaceOnUse">
+      <path d="M11 1.5 L20 9 L11 16.5 L2 9 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M11 6 L15 9 L11 12 L7 9 Z" fill="currentColor"/>
+    </pattern>
+    <pattern id="p-degrau" width="28" height="18" patternUnits="userSpaceOnUse">
+      <path d="M1 16 V3 H27 V13 H9 V7 H19" fill="none" stroke="currentColor" stroke-width="2.2"/>
+    </pattern>
+    <pattern id="p-pontos" width="14" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="9" r="2.6" fill="currentColor"/>
+    </pattern>
+
+    <!-- Adinkra: Adinkrahene (círculos concêntricos) -->
+    <symbol id="s-adinkrahene" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="4"><circle cx="32" cy="32" r="28"/><circle cx="32" cy="32" r="18"/></g>
+      <circle cx="32" cy="32" r="8" fill="currentColor"/>
+    </symbol>
+    <!-- Adinkra: Sankofa em forma de coração -->
+    <symbol id="s-sankofa" viewBox="0 0 64 64">
+      <path d="M32 57 C8 40 5 20 18 12 C26 8 32 14 32 19 C32 14 38 8 46 12 C59 20 56 40 32 57 Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M22 24 C22 19 29 19 29 24 C29 29 24 30 22 27" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M42 24 C42 19 35 19 35 24 C35 29 40 30 42 27" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+    </symbol>
+    <!-- Adinkra: Nkyinkyim (torção, iniciativa) -->
+    <symbol id="s-nkyinkyim" viewBox="0 0 64 64">
+      <path d="M12 54 C12 40 28 44 28 32 C28 20 12 24 12 10 M36 54 C36 40 52 44 52 32 C52 20 36 24 36 10" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+    </symbol>
+    <!-- Losango escalonado (grafismo geométrico) -->
+    <symbol id="s-losango" viewBox="0 0 64 64">
+      <path d="M32 4 L60 32 L32 60 L4 32 Z" fill="none" stroke="currentColor" stroke-width="4"/>
+      <path d="M32 16 L48 32 L32 48 L16 32 Z" fill="none" stroke="currentColor" stroke-width="3.2"/>
+      <path d="M32 26 L38 32 L32 38 L26 32 Z" fill="currentColor"/>
+    </symbol>
+    <!-- Encruzilhada (cruzamento de caminhos) -->
+    <symbol id="s-encruzilhada" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="14" fill="none" stroke="currentColor" stroke-width="4"/>
+      <path d="M32 4 V18 M32 46 V60 M4 32 H18 M46 32 H60" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+      <circle cx="32" cy="32" r="4.5" fill="currentColor"/>
+    </symbol>
+    <!-- Trama (cestaria) -->
+    <symbol id="s-trama" viewBox="0 0 64 64">
+      <path d="M6 22 H58 M6 42 H58 M22 6 V58 M42 6 V58" stroke="currentColor" stroke-width="4.5" stroke-linecap="square"/>
+      <path d="M22 22 H42 V42 H22 Z" fill="currentColor"/>
+    </symbol>
+    <!-- Arcos (ponte entre margens) -->
+    <symbol id="s-arco" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M6 50 A26 26 0 0 1 58 50"/><path d="M16 50 A16 16 0 0 1 48 50"/></g>
+      <path d="M26 50 A6 6 0 0 1 38 50 Z" fill="currentColor"/>
+    </symbol>
+    <!-- Folha / espiga -->
+    <symbol id="s-folha" viewBox="0 0 64 64">
+      <path d="M32 60 V10 M32 22 C20 22 14 14 14 6 C24 6 32 12 32 22 M32 34 C44 34 50 26 50 18 C40 18 32 24 32 34 M32 46 C22 46 16 40 16 32 C26 32 32 38 32 46" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="band band-zigzag"></div>
+  <div class="header-inner">
+    <div class="top-row">
+      <div class="eyebrow">Ensino de Química · Currículo Paulista</div>
+      <button class="about-link" id="aboutBtn">Sobre mim</button>
+    </div>
+
+    <div class="hero-title">
+      <h1 class="reveal d1">
+        A Química também <span class="accent reveal d2">nasce</span> dos saberes ancestrais.
+      </h1>
+    </div>
+
+    <p class="lede reveal d3">Materiais, práticas pedagógicas e referências para professoras e professores que querem descolonizar o currículo de Química. Cada seção reúne leituras, pessoas e produções para levar à sala de aula.</p>
+    <div class="cta reveal d4">
+      <a class="btn solid" href="#mapa">Explorar o mapa</a>
+      <a class="btn" href="#dissertacao">Conhecer a dissertação</a>
+    </div>
+  </div>
+</header>
+
+<div class="band band-dots"></div>
+
+<!-- MAPA — só as bolinhas, centralizado. -->
+<section class="map-band">
+<div class="intro-wrap" id="mapa">
+  <p class="lede reveal d5" style="max-width:52ch; margin:0 auto 18px; text-align:center; font-size:14.5px;">Cada símbolo é uma temática do repositório. Toque em um deles para conhecer a ideia da cultura que o inspira e filtrar a lista mais abaixo.</p>
+  <div class="trail-map-wrap reveal d6">
+    <div class="trail-map" id="trailMap">
+      <svg viewBox="-440 -440 880 880" id="trailMapSvg" role="group" aria-label="Rede circular de materiais do repositório"></svg>
+    </div>
+    <div class="map-info" id="mapInfo" aria-live="polite"></div>
+  </div>
+</div>
+</section>
+
+<!-- DISSERTAÇÃO -->
+<section class="diss-sec" id="dissertacao">
+  <div class="diss-inner">
+    <p class="eyebrow">Origem do repositório</p>
+    <h2>A dissertação</h2>
+    <p class="sec-intro">Este repositório é o produto educacional de uma dissertação de mestrado profissional sobre a descolonização curricular no ensino de Química. Ele organiza, para uso em sala de aula, o que a pesquisa discute em torno do Currículo Paulista e dos materiais do Centro de Mídias de São Paulo.</p>
+    <div class="diss">
+      <div class="panel">
+        <h3>Ficha da pesquisa</h3>
+        <dl class="meta">
+          <dt>Autora</dt><dd>Marcela Sette da Silva</dd>
+          <dt>Orientação</dt><dd>Profª. Drª. Daniela Gonçalves de Abreu Favacho</dd>
+          <dt>Programa</dt><dd>PROFQUI, Mestrado Profissional em Química em Rede Nacional</dd>
+          <dt>Instituição</dt><dd>USP, Ribeirão Preto</dd>
+          <dt>Tema</dt><dd>Descolonização curricular no ensino de Química, a partir do Currículo Paulista e dos materiais do CMSP</dd>
+          <dt>Produto</dt><dd>Repositório virtual de materiais e práticas pedagógicas decoloniais para o ensino de Química, articulado ao Currículo Paulista</dd>
+        </dl>
+        <ul class="mapbox" aria-label="Como o repositório se organiza">
+          <li><svg aria-hidden="true"><use href="#s-losango"/></svg><div><strong>Currículo.</strong> Leituras que analisam e propõem mudanças no currículo de Química.</div></li>
+          <li><svg aria-hidden="true"><use href="#s-folha"/></svg><div><strong>Saberes.</strong> Práticas e conhecimentos indígenas e afro-brasileiros ligados a conteúdos de Química.</div></li>
+          <li><svg aria-hidden="true"><use href="#s-sankofa"/></svg><div><strong>Cientistas e rede.</strong> Pessoas e pesquisas do PROFQUI que ampliam o repertório da aula.</div></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Texto completo</h3>
+        <div class="file-slot">
+          <span class="eyebrow" style="margin:0">PDF da dissertação</span>
+          <!-- Quando tiver o PDF, troque o <span> abaixo por:
+               <a class="btn solid" href="dissertacao.pdf" target="_blank" rel="noopener">Baixar PDF ↗</a> -->
+          <span class="btn disabled" aria-disabled="true">Baixar PDF (em breve)</span>
+          <small>O arquivo da versão corrigida entra aqui assim que for enviado para publicação. Até lá, esta seção traz a ficha da pesquisa.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="filterbar" id="acervo">
+  <div class="tabs">
+    <button class="tab active" data-trilha="todas">Todas</button>
+    <button class="tab" data-trilha="curriculo">Currículo</button>
+    <button class="tab" data-trilha="afro">Afrocentrados</button>
+    <button class="tab" data-trilha="indigenas">Indígenas</button>
+    <button class="tab" data-trilha="diaspora">Diáspora</button>
+    <button class="tab" data-trilha="latam">Decoloniais</button>
+    <button class="tab" data-trilha="cientistas">Cientistas</button>
+    <button class="tab" data-trilha="profqui">PROFQUI</button>
+    <button class="tab" data-trilha="midia">Podcasts</button>
+  </div>
+  <div class="tools">
+    <select id="typeSelect" aria-label="Filtrar por tipo de material">
+      <option value="todos">Todos os tipos</option>
+      <option value="Artigo">Artigos</option>
+      <option value="Livro ou capítulo">Livros e capítulos</option>
+      <option value="Dissertação ou tese">Dissertações e teses</option>
+      <option value="Trabalho em evento">Eventos</option>
+      <option value="Reportagem">Reportagens</option>
+      <option value="Perfil">Perfis</option>
+    </select>
+    <div class="searchbox">
+      <input type="text" id="searchInput" placeholder="Buscar por título, autoria ou ano…">
+    </div>
+  </div>
+</div>
+
+<main>
+  <p class="stats" id="stats"></p>
+  <div class="count" id="resultCount" style="margin-bottom:16px;"></div>
+  <div class="grid" id="cardGrid"></div>
+</main>
+
+<div class="band band-diamond"></div>
+
+<footer>
+  <span>Repositório Decolonial — produto educacional da dissertação de Marcela Sette da Silva, orientada pela Profª. Drª. Daniela Gonçalves de Abreu Favacho.</span>
+  <span>PROFQUI · USP Ribeirão Preto</span>
+  <small style="flex-basis:100%">Os links levam a páginas de terceiros. Os títulos e descrições seguem o que cada fonte publica.</small>
+</footer>
+
+<div class="overlay" id="overlay">
+  <div class="modal" id="modalContent"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
